@@ -45,7 +45,7 @@
 <p>
   <strong>• HTML:</strong> Para a estruturação e o conteúdo das páginas web<br>
   <strong>• CSS:</strong> Para a estilização e o design responsivo da interface do usuário<br>
-  <strong>• JavaScript</strong>: Para a interatividade e a dinâmica das funcionalides do lado do cliente
+  <strong>• JavaScript:</strong> Para a interatividade e a dinâmica das funcionalides do lado do cliente
 </p>
 <h3>
   Backend ¬
@@ -67,7 +67,7 @@
 </h1>
 <p>
   Para que o Conecta Aí possa ser executado em seu ambiente local, você precirsará ter os seguintes softwares instalos:<br>
-  <strong>• Java Development Kit (JDK)</strong>: Versão 17 ou superior.<br>
+  <strong>• Java Development Kit (JDK):</strong> Versão 17 ou superior.<br>
   <strong>• Maven ou Grandle:</strong> Ferramentas de automação de construção para o projeto Java.<br>
   <strong>• MySQL Server:</strong> Para configurar o banco de dados localmente.<br>
   <strong>• Node.js:</strong> Necessário para instalar e executar o http-server para o frontend.
@@ -78,7 +78,7 @@
 <p>
   Para que o Conecta Aí possa ser executado em seu ambiente local, siga os passos abaixo. 
   Certifique-se de ter todos os pré-requisitos instalados.<br>
-  <strong>1. Clone o Repositório</strong>: Primeiro, faça um clone do repositório do projeto para o seu computador. 
+  <strong>1. Clone o Repositório:</strong> Primeiro, faça um clone do repositório do projeto para o seu computador. 
   Abra o terminal ou prompt de comando e execute: git clone https://github.com/Luizapmatoss/Conecta-Ai.git<br>
   Navegue até a paz raiz do projeto: cd backend<br>
   <strong>2. Configurar o Banco de Dados MySQL:</strong><br>
