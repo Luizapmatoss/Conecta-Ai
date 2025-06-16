@@ -1,0 +1,20 @@
+{
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C:\\Program Files\\Java\\jdk-17",
+      "default": true
+    }
+  ],
+  "maven.executable.path": "${workspaceFolder}/mvnw",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/target": true
+  },
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+"java.format.settings.profile": "GoogleStyle",
+"java.configuration.updateBuildConfiguration": "disabled",
+"java.compile.nullAnalysis.mode": "disabled"
+}

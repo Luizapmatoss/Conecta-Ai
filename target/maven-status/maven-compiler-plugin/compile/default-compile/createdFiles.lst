@@ -1,0 +1,17 @@
+com\conectaai\backend\repository\UsuarioRepository.class
+com\conectaai\backend\model\Chamado.class
+com\conectaai\backend\dto\LoginRequest.class
+com\conectaai\backend\model\Feedback.class
+com\conectaai\backend\controller\ChamadoController.class
+com\conectaai\backend\repository\FeedbackRepository.class
+com\conectaai\backend\model\Usuario.class
+com\conectaai\backend\repository\ChamadoRepository.class
+com\conectaai\backend\config\securityConfig.class
+com\conectaai\backend\controller\FeedbackController.class
+com\conectaai\backend\service\FeedbackService.class
+com\conectaai\backend\service\UsuarioService.class
+com\conectaai\backend\BackendApplication.class
+com\conectaai\backend\dto\UsuarioDTO.class
+com\conectaai\backend\controller\UsuarioController.class
+com\conectaai\backend\service\ChamadoService.class
+com\conectaai\backend\config\WebConfig.class

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/cadastro.css">
+
+    <title>Conecta Ai - Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="src/logo.svg" width="220" class="logo">
+            </a>
+            <ul id="nav_list">
+                <div id="icone">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left-painel">
+            <div class="content">
+                <div id="cta_login">
+                    <h1 class="title">
+                        Seja bem-vindo de voltar!
+                    </h1>
+                    <p class="section-subtitle">
+                        entre em sua conta e volte para a<br>
+                        melhor plataforma de suporte de TI
+                    </p>
+                </div>
+				<a href="login.html">
+                <button id="btnloginc">Fazer login</button>
+				</a>
+            </div>
+        </div>
+        <div class="right-painel">
+            <div id="cta_cadastro">
+                <h1 class="title-right">
+                    Crie sua conta
+                </h1>
+                <p class="section-subtitle-right">
+                    e entre para o nosso time!
+                </p>
+                <div class="textfield">
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo">
+                    <input type="text" id="email" name="email" placeholder="Endereço de email">
+                    <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha">
+                </div>
+            </div>
+            <button onclick="cadastrar()" id="btncadastroc">Cadastre-se</button>
+        </div>
+    </div>
+	<script src="javascript/cadastro.js" defer></script>
+
+</body>
+
+</html>

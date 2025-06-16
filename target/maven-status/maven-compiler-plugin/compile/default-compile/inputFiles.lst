@@ -1,0 +1,17 @@
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\BackendApplication.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\config\securityConfig.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\config\WebConfig.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\controller\ChamadoController.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\controller\FeedbackController.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\controller\UsuarioController.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\dto\LoginRequest.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\dto\UsuarioDTO.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\model\Chamado.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\model\Feedback.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\model\Usuario.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\repository\ChamadoRepository.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\repository\FeedbackRepository.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\repository\UsuarioRepository.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\service\ChamadoService.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\service\FeedbackService.java
+C:\Users\Luiza\Downloads\backend\src\main\java\com\conectaai\backend\service\UsuarioService.java

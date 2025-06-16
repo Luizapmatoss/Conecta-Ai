@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/procurarprof.css">
+    <title>Conecta Ai - Procurar Profissional</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="src/logo.svg" width="220" class="logo">
+            </a>
+            <ul id="nav_list">
+                <a id="icone" href="menu.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Encontre um Profissional de TI</h1>
+
+        <div class="filtros">
+            <input type="text" id="searchInput" placeholder="Buscar por nome..." />
+            <select id="especialidadeSelect">
+                <option value="">Todas as especialidades</option>
+                <option value="Redes">Redes</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Software">Software</option>
+                <option value="Seguranca">Segurança</option>
+                <option value="impressora">Impressora</option>
+            </select>
+        </div>
+
+        <div id="profissionais" class="grid">
+            <!-- Cartões gerados pelo JavaScript -->
+        </div>
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" onclick="fecharModal()">×</span>
+                <img id="modal-foto" class="modal-img" src="" alt="Foto do profissional" />
+                <h3 id="modal-nome">Nome do Profissional</h3>
+                <p><strong>Especialidade:</strong> <span id="modal-especialidade"></span></p>
+                <p><strong>Estado:</strong> <span id="modal-estado"></span></p>
+                <p><strong>Experiência:</strong> <span id="modal-experiencia"></span></p>
+                <p><strong>Descrição:</strong> <span id="modal-descricao"></span></p>
+                <a href="https://web.whatsapp.com/">
+                    <button id="contato">
+                        Entrar em contato
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/profissional.js"></script>
+</body>
+
+</html>

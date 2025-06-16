@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF5EB;
+}
+
+section {
+    padding: 28px 8%;
+}
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #2CACAD;
+    transition: width 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #2CACAD;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+}
+
+#icone {
+    width: 0px;
+    font-size: 27px;
+    cursor: pointer;
+    color: #2CACAD;
+}
+
+#icone:hover {
+    color: #024D60;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.filtros button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #99caca;
+    cursor: pointer;
+}
+
+.filtros button:hover {
+    background-color: #2CACAD;
+    color: white;
+}
+
+h1 {
+    font-size: 35px;
+    color: #2CACAD;
+    font-weight: 600;
+}
+
+.novo-chamado {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2CACAD;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #FFF5EB;
+}
+
+.novo-chamado:hover {
+    color: #024D60;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card.detalhado {
+    background-color: #eaf6ff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.status {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.status.aberto {
+    background-color: #024D60;
+}
+
+.status.em-andamento {
+    background-color: #2CACAD;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+
+.conteudo {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin: 0;
+}
+
+.tempo {
+    font-size: 12px;
+    color: gray;
+    margin: 3px 0 0;
+}
+
+.id {
+    font-size: 12px;
+    color: gray;
+}
+
+.form-chamado {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-chamado h2 {
+    margin-bottom: 10px;
+}
+
+.form-chamado label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-chamado input,
+.form-chamado textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-chamado button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #008cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-chamado button:hover {
+    background-color: #0073d8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.modal-content button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2CACAD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: white;
+}
+
+.fechar {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s;
+}
+
+.fechar {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.fechar:hover {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.alerta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2CACAD;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 9999;
+    font-weight: bold;
+    animation: aparecer 0.3s ease-in-out;
+}
+
+.alerta.erro {
+    background-color: #d50000; /* vermelho para erro */
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

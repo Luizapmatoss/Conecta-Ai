@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #FFF5EB;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 3px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#icone a {
+    width: 0px;
+    font-size: 27px;
+    cursor: pointer;
+    color: #2CACAD;
+}
+
+#icone a:hover {
+    color: #024D60;
+}
+
+.left-painel {
+    width: 50%;
+    height: 100%;
+    background-color: #2CACAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    border-radius: 0% 30% 30% 0%;
+}
+
+.left-painel .title {
+    color: #024D60;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #1d1d1d;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.content {
+    width: 70%;
+    text-align: center;
+}
+
+#btnloginc {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #024D60;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+
+#btnloginc a {
+    color: #FFF5EB;
+    text-decoration: none;
+}
+
+#btnloginc a:hover {
+    color: #2CACAD;
+}
+
+.right-painel {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5EB;
+    text-align: center;
+}
+
+#cta_cadastro .title-right {
+    color: #2CACAD;
+    font-size: 2.7rem;
+}
+
+.right-painel .section-subtitle-right {
+    font-size: 1.6rem;
+    color: #1d1d1d;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textfield input {
+    width: 121%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    font-size: 12pt;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #e1f0f0;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#btncadastroc {
+    width: 60%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #2CACAD;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+#btncadastroc {
+    color: #FFF5EB;
+    text-decoration: none;
+}
+
+#btncadastroc:hover {
+    color: #024D60;
+}
+

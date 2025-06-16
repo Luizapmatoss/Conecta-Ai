@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/chamado.css">
+    <title>Conecta Ai - Chamados de Suporte</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="src/logo.svg" width="220" class="logo">
+            </a>
+            <ul id="nav_list">
+                <a id="icone" href="menu.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+	<div class="container">
+	    <div class="header">
+	        <h1>Chamados de Suporte</h1>
+	        <button class="novo-chamado">Novo Chamado</button>
+	    </div>
+
+	    <div class="filtros">
+	        <button onclick="filtrarChamados('todos')">Todos</button>
+	        <button onclick="filtrarChamados('aberto')">Abertos</button>
+	        <button onclick="filtrarChamados('em-andamento')">Em Andamento</button>
+	    </div>
+
+	    <div id="chamados-container"></div>
+	</div>
+    <div id="modal-form" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModalForm()">&times;</span>
+            <h2>Novo Chamado</h2>
+            <form onsubmit="criarChamado(event)">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" required></textarea>
+
+                <button id="btnEnviarChamado" type="submit">Enviar Chamado</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+			<span class="status em-andamento">EM ANDAMENTO</span>
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p><strong>ID:</strong> <span id="modal-id"></span></p>
+            <p><strong>Status:</strong> <span id="modal-status"></span></p>
+            <p><strong>Data:</strong> <span id="modal-tempo"></span></p>
+            <p><strong>Descrição:</strong></p>
+            <p id="modal-descricao"></p>
+        </div>
+    </div>
+	
+	<div id="alerta" class="alerta"></div>
+
+</body>
+<script src="javascript/chamado.js"></script>
+
+</html>

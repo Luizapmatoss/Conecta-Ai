@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/feedbacks.css" />
+  <title>Conecta Ai - Feedbacks</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <a href="index.html">
+        <img src="src/logo.svg" width="220" class="logo" />
+      </a>
+      <ul id="nav_list">
+        <a id="icone" href="menu.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="header">
+      <h1>Avaliações e Feedbacks</h1>
+      <button class="novo-feedback">Novo Feedback</button>
+    </div>
+
+    <!-- Cards serão renderizados aqui -->
+    <div id="lista-feedbacks"></div>
+  </div>
+
+  <!-- Modal de formulário -->
+  <div id="modal-form" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModalForm()">&times;</span>
+      <h2>Novo Chamado</h2>
+      <form onsubmit="criarFeedback(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required />
+
+        <label for="avaliar">Avaliação:</label>
+        <div class="estrelas">
+          <input type="radio" name="rating" id="estrela5" value="5" />
+          <label for="estrela5">&#9733;</label>
+
+          <input type="radio" name="rating" id="estrela4" value="4" />
+          <label for="estrela4">&#9733;</label>
+
+          <input type="radio" name="rating" id="estrela3" value="3" />
+          <label for="estrela3">&#9733;</label>
+
+          <input type="radio" name="rating" id="estrela2" value="2" />
+          <label for="estrela2">&#9733;</label>
+
+          <input type="radio" name="rating" id="estrela1" value="1" />
+          <label for="estrela1">&#9733;</label>
+        </div>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" rows="4" required></textarea>
+
+        <button type="submit">Enviar Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="fecharModal()">&times;</span>
+      <h2 id="modal-titulo"></h2>
+      <p><strong>Nome:</strong> <span id="modal-nome"></span></p>
+      <p><strong>Avaliação:</strong> <span id="modal-avaliacao"></span></p>
+      <p><strong>Data:</strong> <span id="modal-tempo"></span></p>
+      <p><strong>Descrição:</strong> <span id="modal-descricao"></span></p>
+    </div>
+  </div>
+  
+  <div id="mensagem-sucesso" class="mensagem-sucesso hidden">
+    Feedback enviado com sucesso!
+  </div>
+
+  <script src="javascript/feedback.js" defer></script>
+</body>
+</html>

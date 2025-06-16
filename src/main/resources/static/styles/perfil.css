@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF5EB;
+}
+
+#icone {
+  width: 0px;
+  font-size: 27px;
+  cursor: pointer;
+  color: #2cacad;
+}
+
+#icone:hover {
+  color: #024d60;
+}
+
+.profile-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+        
+.stat-card {
+    transition: all 0.2s ease;
+}
+        
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.alterar-senha {
+  color: #024d60;
+  text-decoration: #024d60;
+}
+
+#edit-profile {
+  background-color: #2cacad;
+  color: #1d1d1d;
+}
+
+#edit-profile:hover {
+  background-color: #024d60;
+  color: white;
+}
+
+#save-changes {
+  background-color: #024d60;
+  color: white;
+}
+
+#save-changes:hover {
+  background-color: #2cacad;
+  color: #1d1d1d;
+}
+
+#change-photo {
+  background-color: #2cacad;
+  color: #FFF5EB;
+}
+
+.alterar-senha:hover {
+  color: black;
+}
